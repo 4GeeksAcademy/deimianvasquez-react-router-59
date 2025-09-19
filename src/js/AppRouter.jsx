@@ -4,6 +4,7 @@ import { Layout } from "./Layout"
 import Home from "./pages/Home"
 import { Contact } from "./pages/Contact"
 import { Detail } from "./pages/Detail"
+import Todos from "./pages/Todos"
 
 
 export const AppRoute = () => {
@@ -14,6 +15,7 @@ export const AppRoute = () => {
                     {/* Creación de rutas */}
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/todos" element={<Todos />} />
 
                     <Route path="/character/:theid" element={<Detail />} />
 

@@ -15,7 +15,7 @@ export const Navbar = () => {
                             {/* <NavLink className="nav-link" to="/">Home</NavLink> */}
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <NavLink className={({ isActive }) => ` nav-link ${isActive ? "border border-white" : ""}`} to="/todos">Todos</NavLink>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Pricing</a>
