@@ -12,13 +12,12 @@ export const Navbar = () => {
                     <ul className="navbar-nav w-100 justify-content-end">
                         <li className="nav-item">
                             <NavLink className={({ isActive }) => ` nav-link ${isActive ? "border border-white" : ""}`} to="/">Home</NavLink>
-                            {/* <NavLink className="nav-link" to="/">Home</NavLink> */}
                         </li>
                         <li className="nav-item">
                             <NavLink className={({ isActive }) => ` nav-link ${isActive ? "border border-white" : ""}`} to="/todos">Todos</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
+                            <NavLink className={({ isActive }) => ` nav-link ${isActive ? "border border-white" : ""}`} to="/reducer">Reducer</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className={({ isActive }) => ` nav-link ${isActive ? "border border-white" : ""}`} to="/contact">Contact</NavLink>

@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import { Contact } from "./pages/Contact"
 import { Detail } from "./pages/Detail"
 import Todos from "./pages/Todos"
+import { Reducer } from "./pages/Reducer"
 
 
 export const AppRoute = () => {
@@ -16,6 +17,7 @@ export const AppRoute = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/todos" element={<Todos />} />
+                    <Route path="reducer" element={<Reducer />} />
 
                     <Route path="/character/:theid" element={<Detail />} />
 
